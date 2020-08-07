@@ -24,7 +24,7 @@ app.use(express.static(publicFloer))
 app.get('',(req,res)=>{
     res.render('index',{
         title: 'Weather',
-        creator: 'Rajeev Ojha'
+        creator: 'R O'
     })
 })
 
@@ -32,14 +32,14 @@ app.get('',(req,res)=>{
 app.get('/help',(req,res)=>{
     res.render('help',{
         title: "Help",
-        creator: 'Rajeev Ojha'
+        creator: 'R O'
     })
 })
 
 app.get('/about',(req,res)=>{
     res.render('about',{
         title: "About",
-        creator: 'Rajeev Ojha'
+        creator: 'R O'
     })
 })
 
@@ -67,7 +67,7 @@ app.get('/weather',(req,res)=>{
 app.get('/help/*',(req,res)=>{
     res.render('404pg',{
         title: "404",
-        creator: 'Rajeev Ojha',
+        creator: 'R O',
         errorMsg: 'No help page for this ...'
     })
 })
@@ -75,7 +75,7 @@ app.get('/help/*',(req,res)=>{
 app.get('*',(req,res)=>{
     res.render('404pg',{
         title: "404",
-        creator: 'Rajeev Ojha',
+        creator: 'R.O',
         errorMsg: "No such page exist"
     })
 })
