@@ -11,7 +11,7 @@ const partialPath = path.join(__dirname,'../templates/partial')
 // console.log(publicFloer)
 
 const app = express()
-
+const port = process.env.PORT || 3000
 //set use of handlebar
 
 app.set('view engine', 'hbs')
@@ -79,7 +79,7 @@ app.get('*',(req,res)=>{
         errorMsg: "No such page exist"
     })
 })
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log("server started");
 })
 
