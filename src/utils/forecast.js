@@ -13,7 +13,7 @@ const forecast = (lat,lang, callback) => {
             //                     response.body.current.feelslike )
             callback(undefined,weather="The temperature at " + response.body.location.name + " is " + 
                                 response.body.current.temperature + ' and it feels like ' + 
-                                response.body.current.feelslike )
+                                response.body.current.feelslike + '. Chance of rain is ' + response.body.current.precip + '%')
         }
     })
 }
